@@ -25,11 +25,11 @@
     
         {%- liquid
           if request.page_type != 'product'
-            assign product = all_products['brulagene']
+            assign product = all_products['bruleur-moka-complement-alimentaire-metabolisme']
             if product == empty or product == null
               paginate collections.all.products by 100000
                 for item in collections.all.products
-                  if item.id == '7249996021838'
+                  if item.id == '7249996152910'
                     assign product = item
                   endif
                 endfor
