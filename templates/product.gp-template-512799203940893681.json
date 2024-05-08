@@ -6,9 +6,15 @@
       "settings": {
         "section_preload": "true"
       }
+    },
+    "gp_section_512800742378046575": {
+      "type": "gp-section-512800742378046575",
+      "settings": {
+      }
     }
   },
   "order": [
-    "gp_section_512800683624236168"
+    "gp_section_512800683624236168",
+    "gp_section_512800742378046575"
   ]
 }
