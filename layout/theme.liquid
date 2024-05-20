@@ -368,15 +368,7 @@ $(document).ready(function() {
         type: 'GET',
         dataType: 'json',
         success: function(data) {
-            // Traitez les données reçues
-            console.log(data);
-            // Vous pouvez maintenant utiliser ces données pour mettre à jour votre interface utilisateur
-            // Par exemple, afficher les produits dans une liste
-            let cartItems = $('#cart-items');
-            cartItems.empty(); // Vider le conteneur
-            data.forEach(function(item) {
-                cartItems.append(`<li>${item.name} - ${item.quantity} - ${item.price}</li>`);
-            });
+            console.log(data); 
         },
         error: function(error) {
             console.error('Erreur lors de la récupération du panier:', error);
