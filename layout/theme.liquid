@@ -359,7 +359,23 @@
 
 
     <script>
-      console.log('abcdefg')
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('/api/cart')
+            .then(response => response.json())
+            .then(data => {
+                // Traitez les données reçues
+                console.log(data);
+
+                // data.forEach(item => {
+                //     let listItem = document.createElement('li');
+                //     listItem.textContent = `${item.name} - ${item.quantity} - ${item.price}`;
+                //     cartItems.appendChild(listItem);
+                // });
+            })
+            .catch(error => {
+                console.error('Erreur lors de la récupération du panier:', error);
+            });
+    });
     </script>
   </body>
 </html>
